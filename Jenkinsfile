@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Deploy') {
       steps {
-        sh '''scp . root@staging:/var/www/
+        sh '''scp . root@staging-node:/var/www/
 '''
       }
     }

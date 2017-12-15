@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Deploy') {
       steps {
-        sh '''scp . root@staging-node:/var/www/
+        sh '''scp -r . jenkins@10.0.0.5:/var/www/
 '''
       }
     }
